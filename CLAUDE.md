@@ -51,8 +51,8 @@ Esta é a parte mais sensível do projeto. Regras invioláveis:
 ## Regras de conteúdo
 
 - **Todo texto voltado ao usuário é em português brasileiro**: enunciados, dicas, explicações, UI, mensagens de erro do runner. Nomes de funções/variáveis no starter code seguem o padrão do LeetCode em inglês (ex: `twoSum`).
-- Todo exercício deve ter: starter code e solução funcionais **nas duas linguagens** (TS e Python), 4-6 test cases visíveis + 2 ocultos (`hidden: true`), exatamente 3 dicas progressivas, explicação com complexidade de tempo e espaço.
-- Antes de dar um exercício por pronto, validar que a solução oficial passa em todos os test cases nas duas linguagens.
+- Todo exercício deve ter: starter code e solução funcionais **nas três linguagens** (TS, JS e Python), 4-6 test cases visíveis + 2 ocultos (`hidden: true`), exatamente 3 dicas progressivas, explicação com complexidade de tempo e espaço.
+- Antes de dar um exercício por pronto, validar que a solução oficial passa em todos os test cases nas três linguagens (`pnpm validate`).
 - Enunciados são reescritos em português, não traduções literais; incluir `leetcodeUrl` apontando para o problema equivalente.
 - Padrões (slugs fixos, não renomear): `two-pointers`, `sliding-window`, `hashmap`, `stack`, `binary-search`, `linked-list`, `trees-bfs-dfs`, `heap`, `backtracking`, `dynamic-programming`, `graphs`, `intervals`, `greedy`, `bit-manipulation`.
 
@@ -61,7 +61,7 @@ Esta é a parte mais sensível do projeto. Regras invioláveis:
 1. Criar `src/content/exercises/<id>.ts` exportando um objeto `Exercise` (tipo em `src/content/types.ts`)
 2. Registrar no índice `src/content/exercises/index.ts`
 3. O `pattern` deve ser um dos slugs fixos acima
-4. Rodar a solução contra os test cases nas duas linguagens antes de commitar
+4. Rodar a solução contra os test cases nas três linguagens antes de commitar
 
 ## Persistência (localStorage)
 
